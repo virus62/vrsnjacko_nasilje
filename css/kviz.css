@@ -1,0 +1,9 @@
+#igra {
+    width: 80%;
+    height: auto;
+    border: solid 5px green;
+}
+
+#igra iframe {
+    width: 100%;
+}

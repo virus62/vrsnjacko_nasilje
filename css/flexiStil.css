@@ -1,0 +1,74 @@
+footer {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-content: center;
+    text-align: center;
+}
+
+#tim {
+    width: 80px;
+    margin: 0 auto;
+}
+
+#tim img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*treskanje slike*/
+#tim img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform:  rotate(0deg); }
+    10% { transform:  rotate(-10deg); }
+    20% { transform:  rotate(-20deg); }
+    30% { transform:  rotate(-20deg); }
+    40% { transform:  rotate(-10deg); }
+    50% { transform:  rotate(0deg); }
+    60% { transform:  rotate(10deg); }
+    70% { transform:  rotate(20deg); }
+    80% { transform:  rotate(20deg); }
+    90% { transform:  rotate(10deg); }
+    100% { transform:  rotate(0deg); }
+}
+
+.podnozje {
+    border-radius: 20%;
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+}
+  
+.podnozje img {
+    width: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    .podnozje {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .podnozje img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sadrzaj {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
